@@ -20,6 +20,7 @@ namespace MediaLibrary
 
             Console.WriteLine("1) Add Movie");
             Console.WriteLine("2) Display All Movies");
+            Console.WriteLine("3) Find movie ");
             string userInput = Console.ReadLine();
 
             if(userInput == "1"){
@@ -103,6 +104,9 @@ namespace MediaLibrary
                 }
                 sr.Close();
 
+            } else if (userInput == "3"){
+                //search for movie 
+                
             }
 
 
