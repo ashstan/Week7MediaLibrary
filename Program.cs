@@ -109,8 +109,13 @@ namespace MediaLibrary
                 Console.WriteLine("Enter the movie/keyword would you like to search: ");
                 var movieSearch = Console.ReadLine();
                 var Movies = movieFile.Movies.Where(m => m.title.Contains(movieSearch, StringComparison.OrdinalIgnoreCase));
-                Console.WriteLine($"There are {Movies.Count()} movies that contain " + movieSearch);
-                
+                Console.WriteLine($"There are {Movies.Count()} movies that contain " + movieSearch + ":");
+
+                //list movies
+                foreach(Movie m in Movies)
+                {
+                    Console.WriteLine($"{m.title}");
+                }
             }
 
 
